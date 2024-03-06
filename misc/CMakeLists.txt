@@ -1,3 +1,3 @@
 add_subdirectory(qtcurvepreset)
-add_subdirectory(kde4breeze)
-add_subdirectory(breezetobreezelight)
+add_subdirectory(kde4boingus)
+add_subdirectory(boingustoboinguslight)

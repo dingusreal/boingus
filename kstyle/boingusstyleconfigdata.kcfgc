@@ -1,0 +1,6 @@
+File=boingus.kcfg
+ClassName=StyleConfigData
+NameSpace=Boingus
+Singleton=true
+Mutators=true
+GlobalEnums=true

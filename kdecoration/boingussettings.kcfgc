@@ -1,0 +1,7 @@
+File=boingussettingsdata.kcfg
+ClassName=InternalSettings
+NameSpace=Boingus
+Singleton=false
+Mutators=true
+GlobalEnums=true
+Notifiers=OutlineCloseButton

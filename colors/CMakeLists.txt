@@ -1,8 +1,8 @@
-install(FILES Breeze.colors
+install(FILES Boingus.colors
         DESTINATION ${KDE_INSTALL_DATADIR}/color-schemes/)
-install(FILES BreezeDark.colors
+install(FILES BoingusDark.colors
         DESTINATION ${KDE_INSTALL_DATADIR}/color-schemes/)
-install(FILES BreezeHighContrast.colors
+install(FILES BoingusHighContrast.colors
         DESTINATION ${KDE_INSTALL_DATADIR}/color-schemes/)
-install(FILES BreezeLight.colors
+install(FILES BoingusLight.colors
         DESTINATION ${KDE_INSTALL_DATADIR}/color-schemes/)

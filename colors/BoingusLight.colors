@@ -1,0 +1,185 @@
+[ColorEffects:Disabled]
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=163,212,250
+BackgroundNormal=247,247,247
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Complementary]
+BackgroundAlternate=27,30,32
+BackgroundNormal=42,46,50
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header]
+BackgroundAlternate=239,240,241
+BackgroundNormal=222,224,226
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header][Inactive]
+BackgroundAlternate=227,229,231
+BackgroundNormal=239,240,241
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Selection]
+BackgroundAlternate=163,212,250
+BackgroundNormal=61,174,233
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=255,255,255
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Tooltip]
+BackgroundAlternate=239,240,241
+BackgroundNormal=247,247,247
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:View]
+BackgroundAlternate=247,247,247
+BackgroundNormal=255,255,255
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Window]
+BackgroundAlternate=227,229,231
+BackgroundNormal=239,240,241
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=112,125,138
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=35,38,41
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[General]
+ColorScheme=BoingusLight
+Name=Boingus Light
+Name[az]=Boingus - İşıqlı
+Name[ca]=Brisa clara
+Name[ca@valencia]=Brisa clara
+Name[cs]=Boingus Světlé
+Name[da]=Boingus Light
+Name[de]=Boingus Hell
+Name[el]=Boingus φωτεινό
+Name[en_GB]=Boingus Light
+Name[es]=Brisa claro
+Name[et]=Boingus hele
+Name[eu]=Boingus argia
+Name[fi]=Vaalea Boingus
+Name[fr]=Brise clair
+Name[gl]=Boingus claro
+Name[hi]=ब्रीज़ हलका
+Name[hu]=Boingus Light
+Name[ia]=Brisa Ligier
+Name[id]=Boingus Terang
+Name[it]=Brezza chiaro
+Name[ja]=Boingus ライト
+Name[ko]=밝은 Boingus
+Name[lt]=Boingus šviesus
+Name[nl]=Boingus Light
+Name[nn]=Boingus lys
+Name[pa]=ਬਰੀਜ਼ ਹਲਕਾ
+Name[pl]=Jasna Bryza
+Name[pt]=Brisa Clara
+Name[pt_BR]=Boingus Light
+Name[ro]=Briză, luminos
+Name[ru]=Boingus, светлый вариант
+Name[sk]=Svetlý vánok
+Name[sl]=Sapica lahka
+Name[sv]=Boingus Light
+Name[tg]=Насими сабук
+Name[uk]=Світла Boingus
+Name[x-test]=xxBoingus Lightxx
+Name[zh_CN]=Boingus 微风亮色
+Name[zh_TW]=Boingus Light
+shadeSortColumn=true
+
+[KDE]
+contrast=4
+
+[WM]
+activeBackground=227,229,231
+activeBlend=227,229,231
+activeForeground=35,38,41
+inactiveBackground=239,240,241
+inactiveBlend=239,240,241
+inactiveForeground=112,125,138

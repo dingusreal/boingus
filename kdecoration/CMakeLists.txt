@@ -1,4 +1,4 @@
-add_definitions(-DTRANSLATION_DOMAIN="breeze_kwin_deco")
+add_definitions(-DTRANSLATION_DOMAIN="boingus_kwin_deco")
 
 find_package(KF5 REQUIRED COMPONENTS CoreAddons GuiAddons ConfigWidgets WindowSystem I18n IconThemes)
 find_package(Qt5 CONFIG REQUIRED COMPONENTS DBus)
@@ -14,68 +14,68 @@ set_package_properties(XCB PROPERTIES
 
 if(UNIX AND NOT APPLE)
 
-  set(BREEZE_HAVE_X11 ${XCB_XCB_FOUND})
+  set(BOINGUS_HAVE_X11 ${XCB_XCB_FOUND})
   if (XCB_XCB_FOUND)
     find_package(Qt5 REQUIRED CONFIG COMPONENTS X11Extras)
   endif()
 
 else()
 
-  set(BREEZE_HAVE_X11 FALSE)
+  set(BOINGUS_HAVE_X11 FALSE)
 
 endif()
 
 ################# configuration #################
-configure_file(config-breeze.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-breeze.h )
+configure_file(config-boingus.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-boingus.h )
 
 ################# includes #################
-include_directories(${CMAKE_SOURCE_DIR}/libbreezecommon)
-include_directories(${CMAKE_BINARY_DIR}/libbreezecommon)
+include_directories(${CMAKE_SOURCE_DIR}/libboinguscommon)
+include_directories(${CMAKE_BINARY_DIR}/libboinguscommon)
 
 ################# newt target #################
 ### plugin classes
-set(breezedecoration_SRCS
-    breezebutton.cpp
-    breezedecoration.cpp
-    breezeexceptionlist.cpp
-    breezesettingsprovider.cpp
-    breezesizegrip.cpp)
+set(boingusdecoration_SRCS
+    boingusbutton.cpp
+    boingusdecoration.cpp
+    boingusexceptionlist.cpp
+    boingussettingsprovider.cpp
+    boingussizegrip.cpp)
 
-kconfig_add_kcfg_files(breezedecoration_SRCS breezesettings.kcfgc)
+kconfig_add_kcfg_files(boingusdecoration_SRCS boingussettings.kcfgc)
 
 ### config classes
 ### they are kept separately because they might move in a separate library in the future
-set(breezedecoration_config_SRCS
-    config/breezeconfigwidget.cpp
-    config/breezedetectwidget.cpp
-    config/breezeexceptiondialog.cpp
-    config/breezeexceptionlistwidget.cpp
-    config/breezeexceptionmodel.cpp
-    config/breezeitemmodel.cpp
+set(boingusdecoration_config_SRCS
+    config/boingusconfigwidget.cpp
+    config/boingusdetectwidget.cpp
+    config/boingusexceptiondialog.cpp
+    config/boingusexceptionlistwidget.cpp
+    config/boingusexceptionmodel.cpp
+    config/boingusitemmodel.cpp
 )
 
-set(breezedecoration_config_PART_FORMS
-   config/ui/breezeconfigurationui.ui
-   config/ui/breezedetectwidget.ui
-   config/ui/breezeexceptiondialog.ui
-   config/ui/breezeexceptionlistwidget.ui
+set(boingusdecoration_config_PART_FORMS
+   config/ui/boingusconfigurationui.ui
+   config/ui/boingusdetectwidget.ui
+   config/ui/boingusexceptiondialog.ui
+   config/ui/boingusexceptionlistwidget.ui
 )
 
-ki18n_wrap_ui(breezedecoration_config_PART_FORMS_HEADERS ${breezedecoration_config_PART_FORMS})
+ki18n_wrap_ui(boingusdecoration_config_PART_FORMS_HEADERS ${boingusdecoration_config_PART_FORMS})
 
 ### build library
-add_library(breezedecoration MODULE
-    ${breezedecoration_SRCS}
-    ${breezedecoration_config_SRCS}
-    ${breezedecoration_config_PART_FORMS_HEADERS})
+add_library(boingusdecoration MODULE
+    ${boingusdecoration_SRCS}
+    ${boingusdecoration_config_SRCS}
+    ${boingusdecoration_config_PART_FORMS_HEADERS})
 
-target_link_libraries(breezedecoration
+target_link_libraries(boingusdecoration
     PUBLIC
         Qt::Core
         Qt::Gui
         Qt::DBus
     PRIVATE
-        breezecommon5
+        boinguscommon5
         KDecoration2::KDecoration
         KF5::ConfigCore
         KF5::CoreAddons
@@ -85,13 +85,13 @@ target_link_libraries(breezedecoration
         KF5::IconThemes
         KF5::WindowSystem)
 
-if(BREEZE_HAVE_X11)
-  target_link_libraries(breezedecoration
+if(BOINGUS_HAVE_X11)
+  target_link_libraries(boingusdecoration
     PUBLIC
       Qt::X11Extras
       XCB::XCB)
 endif()
 
 
-install(TARGETS breezedecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/org.kde.kdecoration2)
-install(FILES config/breezedecorationconfig.desktop DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})
+install(TARGETS boingusdecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/org.kde.kdecoration2)
+install(FILES config/boingusdecorationconfig.desktop DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})
